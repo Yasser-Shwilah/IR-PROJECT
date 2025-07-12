@@ -1,0 +1,149 @@
+/* خلفية متدرجة داكنة أنيقة */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #121212, #1d1f2f);
+  color: #e0e0e0;
+  overflow-x: hidden;
+}
+
+/* الحاوية */
+.App {
+  text-align: center;
+  padding: 50px 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* العنوان الرئيسي */
+h1 {
+  font-size: 2.8rem;
+  color: #80d8ff;
+  text-shadow: 0 0 15px rgba(128, 216, 255, 0.3);
+  margin-bottom: 30px;
+  animation: slideIn 1s ease-in-out;
+}
+
+/* حقل الإدخال */
+input[type="text"] {
+  width: 90%;
+  max-width: 480px;
+  padding: 14px 18px;
+  font-size: 1rem;
+  border: 1px solid #2a2a40;
+  border-radius: 10px;
+  background-color: #1e1e2f;
+  color: #ffffff;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6);
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #80d8ff;
+  box-shadow: 0 0 8px #80d8ff;
+}
+
+/* قائمة اختيار الداتاسيت */
+select {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: 1px solid #30394d;
+  border-radius: 10px;
+  background-color: #1e2235;
+  color: #80d8ff;
+  margin-left: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+select:hover {
+  border-color: #80d8ff;
+  box-shadow: 0 0 10px rgba(128, 216, 255, 0.2);
+}
+
+/* زر البحث */
+button {
+  margin-top: 25px;
+  padding: 14px 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #80d8ff, #ff80ab);
+  color: #000;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(128, 216, 255, 0.4);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 18px rgba(128, 216, 255, 0.6);
+}
+
+/* قائمة النتائج */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+li {
+  background-color: rgba(255, 255, 255, 0.03);
+  border-left: 4px solid #80d8ff;
+  border-radius: 10px;
+  padding: 18px;
+  margin: 12px 0;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(128, 216, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px rgba(128, 216, 255, 0.3);
+}
+
+/* نص داخل العناصر */
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* عناوين داخل النتائج */
+b {
+  color: #80d8ff;
+}
+
+/* روابط */
+a {
+  color: #80d8ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* حركات */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
