@@ -1,0 +1,5 @@
+fastapi==0.61.2
+uvicorn==0.12.2
+ir_datasets==0.5.10
+contractions==0.1.73
+nltk==3.9.1
